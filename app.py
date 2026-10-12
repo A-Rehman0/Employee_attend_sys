@@ -19,9 +19,9 @@ GRID_COLS = 4
 
 DEFAULT_NAMES = [
     "Roshan", "Milind", "Avinash", "Shubham", "Apoorv",
-    "Manoj", "Pravin", "Om", "Omakr", "Prashant",
+    "Manoj", "Pravin", "Om", "Omkar", "Prashant",
     "Obulesu", "Sudeep", "Adesh", "Rohan", "Chotelal",
-    "Akshay", "Ravi Teja", "Dhaneshwar", "Rahaman", "Ashish",
+    "Akshay", "Ravi Teja", "Dhaneshwar", "Rehman", "Ashish",
 ]
 
 
