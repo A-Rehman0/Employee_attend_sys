@@ -207,7 +207,7 @@ with col4:
  st.markdown("")
  st.button("🧹 Clear all", on_click=clear_day, args=(day_key,), use_container_width=True)
 
- st.subheader("☑️ Daily Shift Selection")
+st.subheader("☑️ Daily Shift Selection")
 
 for section, emoji in SECTIONS:
     with st.container(border=True):
