@@ -139,6 +139,7 @@ with col1:
     saved = data["attendance"].get(day_key, {})
 
 with col2:
+ st.markdown("")
 # Employee management
  with st.expander("➕ Manage Employee Names"):
     with st.form("add_employee", clear_on_submit=True):
