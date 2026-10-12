@@ -132,10 +132,13 @@ def build_report(day, assignments):
 st.title("📋 P-1466 Daily POD")
 st.caption("Tick names under each section. A name ticked in one section is hidden from the others.")
 
+col1,col2,col3,col4 = st.columns(4)
+with col1:
 day = st.date_input("📅 Report Date", value=date.today())
 day_key = day.isoformat()
 saved = data["attendance"].get(day_key, {})
 
+with col2:
 # Employee management
 with st.expander("➕ Manage Employee Names"):
     with st.form("add_employee", clear_on_submit=True):
@@ -192,7 +195,9 @@ for s in SECTION_NAMES:
         st.session_state[cb_key(day_key, s, i)] = assign.get(i) == s
 
 b1, b2, _ = st.columns([1, 1, 3])
+with col3:
 b1.button("📋 Copy previous day", on_click=copy_previous, args=(day_key,), use_container_width=True)
+with col4:
 b2.button("🧹 Clear all", on_click=clear_day, args=(day_key,), use_container_width=True)
 
 st.subheader("☑️ Daily Shift Selection")
