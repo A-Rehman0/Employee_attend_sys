@@ -140,6 +140,8 @@ with col1:
 
 with col2:
  st.markdown("")
+ st.markdown("")
+
 # Employee management
  with st.expander("➕ Manage Employee Names"):
     with st.form("add_employee", clear_on_submit=True):
