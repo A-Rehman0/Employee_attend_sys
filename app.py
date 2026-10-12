@@ -197,11 +197,11 @@ for s in SECTION_NAMES:
     for i in active_ids:
         st.session_state[cb_key(day_key, s, i)] = assign.get(i) == s
 
-b1, b2, _ = st.columns([1, 1, 3])
+# b1, b2, _ = st.columns([1, 1, 3])
 with col3:
- b1.button("📋 Copy previous day", on_click=copy_previous, args=(day_key,), use_container_width=True)
+ st.button("📋 Copy previous day", on_click=copy_previous, args=(day_key,), use_container_width=True)
 with col4:
- b2.button("🧹 Clear all", on_click=clear_day, args=(day_key,), use_container_width=True)
+ st.button("🧹 Clear all", on_click=clear_day, args=(day_key,), use_container_width=True)
 
 st.subheader("☑️ Daily Shift Selection")
 
