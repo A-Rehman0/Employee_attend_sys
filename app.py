@@ -199,8 +199,12 @@ for s in SECTION_NAMES:
 
 # b1, b2, _ = st.columns([1, 1, 3])
 with col3:
+ st.markdown("")
+ st.markdown("")
  st.button("📋 Copy previous day", on_click=copy_previous, args=(day_key,), use_container_width=True)
 with col4:
+     st.markdown("")
+     st.markdown("")
  st.button("🧹 Clear all", on_click=clear_day, args=(day_key,), use_container_width=True)
 
 st.subheader("☑️ Daily Shift Selection")
